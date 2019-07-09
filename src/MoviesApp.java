@@ -73,17 +73,16 @@ public class MoviesApp {
 				mv10.setTitle("Ten Miles of Peach Blossoms");
 				mv10.setCategory("Fantasy");
 				moviesList.add(mv10);
-				
-				
+
+				// How to make it not repeat....
 				for (int i = 0; i < moviesList.size(); i++) {
 					if (userInput.equalsIgnoreCase(moviesList.get(i).getCategory())) {
 						System.out.println(moviesList.get(i));
+
 					}
 				}
+				
 				break;
-						
-		
-
 
 			}
 			
@@ -95,6 +94,8 @@ public class MoviesApp {
 			}
 			
 		} while (userInput.equalsIgnoreCase("y"));
+		
+		System.out.println();
 	}
 
 }
